@@ -1,0 +1,109 @@
+{
+  "category": "edition",
+  "products": [
+    {
+      "id": 1,
+      "category": "edition",
+      "name": "커스텀 페이스타임 미러",
+      "price": "185,000원",
+      "images": [
+        "edition_1_01.jpg",
+        "edition_1_02.jpg",
+        "edition_1_03.jpg",
+        "edition_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "edition",
+      "name": "모스 러그 그린",
+      "price": "230,000원",
+      "images": [
+        "edition_2_01.jpg",
+        "edition_2_02.jpg",
+        "edition_2_03.jpg",
+        "edition_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "edition",
+      "name": "모스 러그 멀티",
+      "price": "230,000원",
+      "images": [
+        "edition_3_01.jpg",
+        "edition_3_02.jpg",
+        "edition_3_03.jpg",
+        "edition_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "edition",
+      "name": "모스 러그 블랙",
+      "price": "230,000원",
+      "images": [
+        "edition_4_01.jpg",
+        "edition_4_02.jpg",
+        "edition_4_03.jpg",
+        "edition_4_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 5,
+      "category": "edition",
+      "name": "자개장 01",
+      "price": "11,000,000원",
+      "images": [
+        "edition_5_01.jpg",
+        "edition_5_02.jpg",
+        "edition_5_03.jpg",
+        "edition_5_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 6,
+      "category": "edition",
+      "name": "자개장 02",
+      "price": "5,200,000원",
+      "images": [
+        "edition_6_01.jpg",
+        "edition_6_02.jpg",
+        "edition_6_03.jpg",
+        "edition_6_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 7,
+      "category": "edition",
+      "name": "로만 테이블",
+      "price": "7,300,000원",
+      "images": [
+        "edition_7_01.jpg",
+        "edition_7_02.jpg",
+        "edition_7_03.jpg",
+        "edition_7_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 8,
+      "category": "edition",
+      "name": "[SAMBYPEN X SAY TOUCHÉ] 'SAMDONG' Mirror",
+      "price": "가격문의",
+      "images": [
+        "edition_8_01.jpg",
+        "edition_8_02.jpg",
+        "edition_8_03.jpg",
+        "edition_8_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

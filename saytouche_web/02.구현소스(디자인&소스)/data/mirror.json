@@ -1,0 +1,57 @@
+{
+  "category": "mirror",
+  "products": [
+    {
+      "id": 1,
+      "category": "mirror",
+      "name": "커스텀 페이스타임 미러",
+      "price": "185,000원",
+      "images": [
+        "mirror_1_01.jpg",
+        "mirror_1_02.jpg",
+        "mirror_1_03.jpg",
+        "mirror_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "mirror",
+      "name": "갤러리 미러",
+      "price": "160,000원",
+      "images": [
+        "mirror_2_01.jpg",
+        "mirror_2_02.jpg",
+        "mirror_2_03.jpg",
+        "mirror_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "mirror",
+      "name": "갤러리 테이블 미러",
+      "price": "48,000원",
+      "images": [
+        "mirror_3_01.jpg",
+        "mirror_3_02.jpg",
+        "mirror_3_03.jpg",
+        "mirror_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "mirror",
+      "name": "프레임x3 테이블 미러",
+      "price": "48,000원",
+      "images": [
+        "mirror_4_01.jpg",
+        "mirror_4_02.jpg",
+        "mirror_4_03.jpg",
+        "mirror_4_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

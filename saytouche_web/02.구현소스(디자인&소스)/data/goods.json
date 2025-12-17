@@ -1,0 +1,57 @@
+{
+  "category": "goods",
+  "products": [
+    {
+      "id": 1,
+      "category": "goods",
+      "name": "럭키 페르시안 오너먼트",
+      "price": "35,000원",
+      "images": [
+        "goods_1_01.jpg",
+        "goods_1_02.jpg",
+        "goods_1_03.jpg",
+        "goods_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "goods",
+      "name": "[SAY TOUCHÉ X GLASSHAUS] 서핑보드 키링",
+      "price": "19,000원",
+      "images": [
+        "goods_2_01.jpg",
+        "goods_2_02.jpg",
+        "goods_2_03.jpg",
+        "goods_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "goods",
+      "name": "리퀴파이드 페르시안 키링 3종",
+      "price": "19,000원",
+      "images": [
+        "goods_3_01.jpg",
+        "goods_3_02.jpg",
+        "goods_3_03.jpg",
+        "goods_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "goods",
+      "name": "두들 페르시안 키링",
+      "price": "19,000원",
+      "images": [
+        "goods_4_01.jpg",
+        "goods_4_02.jpg",
+        "goods_4_03.jpg",
+        "goods_4_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

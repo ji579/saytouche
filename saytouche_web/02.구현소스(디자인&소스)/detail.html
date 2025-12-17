@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saytouche</title>
+    <!-- 파비콘 넣기 -->
+    <!-- <link rel="shortcut icon" href="./images/favicon.ico" /> -->
+    <!-- 폰트어썸 CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- 메인 CSS -->
+    <link rel="stylesheet" href="./css/detail.css" />
+
+    <!-- 미디어쿼리는 반드시 일반css아래 위치함! -->
+    <link rel="stylesheet" href="./css/media_main.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- 제이쿼리 라이브러리 불러오기 
+     제이쿼리를 사용하는 JS파일 위에 불러와야한다! -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+    <!-- 외부JS 제이쿼리버전 - defer필수! -->
+    <script src="./js/main1_jquery.js" defer></script>
+
+    <!-- <script type="module" src="./js/common.js"></script> -->
+    <!-- 공통 JS :import 문법을 사용하려면
+     반드시 type="module"로 써야한다.-->
+    <script type="module" src="./js/common.js"></script>
+    <!-- 메인 JS -->
+    <script src="./js/sub2.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <div id="top-area"></div>
+    </header>
+    <!-- //////////////////////////////////////////////// -->
+    <!--2. 메인영역 -->
+    <main id="main-area">
+      <div class="main-area">
+        <h2 class="temp-tit blind">메인영역</h2>
+
+      <!-- 2-1 배너 파트 -->
+<section class="banner-part">
+  <h2 class="temp-tit blind">2-1. 배너영역</h2>
+  <!-- 배너 스와이퍼 -->
+  <div class="banner-swiper-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- 슬라이드 1 -->
+        <div class="swiper-slide">
+          <div class="banner-box">
+            <img
+              src="./images/rug1.jpg"
+              alt="세이투세 러그 1"
+              class="bg"
+            />
+          </div>
+        </div>
+        <!-- 슬라이드 2 -->
+        <div class="swiper-slide">
+          <div class="banner-box">
+            <img
+              src="./images/rug2.jpg"
+              alt="세이투세 러그 2"
+              class="bg"
+            />
+          </div>
+        </div>
+        <!-- 슬라이드 3 -->
+        <div class="swiper-slide">
+          <div class="banner-box">
+            <img
+              src="./images/rug3.jpg"
+              alt="세이투세 러그 3"
+              class="bg"
+            />
+          </div>
+        </div>
+        <!-- 슬라이드 4 -->
+        <div class="swiper-slide">
+          <div class="banner-box">
+            <img
+              src="./images/rug4.jpg"
+              alt="세이투세 러그 4"
+              class="bg"
+            />
+          </div>
+        </div>
+        <!-- 슬라이드 5 -->
+        <div class="swiper-slide">
+          <div class="banner-box">
+            <img
+              src="./images/rug5.jpg"
+              alt="세이투세 러그 5"
+              class="bg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 이전/다음 버튼 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- 페이지네이션 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section> <!-- 배너파트 끝 -->
+
+  <!-- 2-2 러그 설명 파트 -->
+   <section class="rug-part">
+    <h2 class="temp-tit blind">2-2. 러그설명영역</h2>
+<p class="type">텍스타일</p>
+<h4 class="name">리퀴파이드 페르시안 러그 그린</h4>
+<div class="color">
+  <img src="./images/Green.png" alt="초록색">
+  <img src="./images/Black.png" alt="검정색">
+  <img src="./images/Burgundy.png" alt="버건디">
+  <img src="./images/Ivory.png" alt="아이보리">
+</div>
+<p class="material">소재: 나일론 100%</p>
+<div class="size">
+  <h4 class="entitle">Size</h4>
+  <ul class="sizelist">
+    <li>Small</li>
+    <li>88cm circle <br>
+1.3kg</li>
+    <li>Medium</li>
+    <li>145cm circle<br>
+3.7kg</li>
+    <li>Large</li>
+    <li>210cm circle<br>
+9kg</li>
+  </ul>
+</div> <!-- 사이즈 끝 -->
+<div class="stepslist">
+  <h4 class="entitle">Note</h4>
+<ul class ="note">
+  <li>모니터 해상도에 따라 색감이 다르게 보일 수 있습니다.</li>
+  <li>새 상품 특성상 원단 특유의 향이 개봉 시 날 수 있습니다.<br>
+(사용함에 따라 향이 자연스럽게 사라집니다.)</li>
+  <li>드라이클리닝 혹은 카페트 전문 클리닝 업체를 통해 <br>
+세탁하시는 것을 권장 드립니다.</li>
+</ul>
+</div> <!-- stepslist끝 -->
+   </section><!--2-2 설명영역 끝-->
+<section class="box">
+  <div class="leftbox">
+    <p class="stepslistname">Entry</p>
+    <p class="stepslistname">리퀴파이드 그라디언트 러그 그린</p>
+    <div class="imgbox left">
+      <img src="./images/Left arrow.png"class="arrow"  alt="왼쪽">
+      <img src="./images/Left arrowhover.png"class="arrow"  alt="왼쪽">
+      <img src="./images/textiles1.jpg" class="item" alt="텍스타일러그그린">
+    </div>
+  </div>
+  <div class="rightbox">
+      <p class="stepslistname">Entry</p>
+    <p class="stepslistname">리퀴파이드 페르시안 러그 아이보리</p>
+    <div class="imgbox right">
+      <img src="./images/Right arrow.png" class="arrow" alt="오른쪽">
+      <img src="./images/Right arrowhover.png" class="arrow" alt="오른쪽">
+      <img src="./images/textiles2.jpg" class="item" alt="텍스타일러그아이보리">
+    </div>
+  </div>
+</section>
+
+
+
+
+      </div><!-- 메인영역 끝 -->
+    </main>
+    <!-- //////////////////////////////////////////////// -->
+    <!-- 6. 하단영역 -->
+    <div id="bottom-area"></div>
+  </body>
+</html>

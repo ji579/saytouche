@@ -1,0 +1,404 @@
+/* 외부 CSS 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+/* 12그리드 CSS */
+@import url(./grid_12_flex.css);
+
+/***************** 메인 CSS ********************/
+
+/* 상단영역 */
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  background: #005a2a;
+  /* background: #006633; */
+  /* background: #003f1f; */
+  transition: translate 0.3s ease; /* 부드럽게 숨김 효과 */
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.toppad {
+  width: 100%;
+  height: auto;
+  height: 84px;
+  /* margin-top: 8px; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.topleft,
+.topright {
+  flex: 1; /* ✅ 자동 크기 조정 */
+  min-width: 0;
+}
+
+.topright {
+  display: flex;
+
+  justify-content: flex-end;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0 10px;
+}
+a {
+  position: relative;
+  font-size: 1.9rem;
+  color: #f0ae1f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sub::before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  width: 5px;
+  height: 5px;
+  background: #f0ae1f;
+  left: 50%;
+  top: -5px;
+  translate: -50% 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sub:hover::before {
+  opacity: 1;
+}
+
+.kr,
+.en {
+  margin-left: 5px;
+}
+
+.kr a:hover,
+.en a:hover {
+  color: #b67c0b;
+}
+.kr a:after,
+.ent a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* 텍스트 바로 아래 */
+  width: 0;
+  height: 2px;
+  background-color: #f0ae1f;
+  transition: width 0.3s ease;
+}
+
+.topleft a:hover::after,
+.topright a:hover::after {
+  width: 100%; /* 선이 왼쪽→오른쪽으로 그려짐 */
+}
+
+/* 상단로고 */
+.main-logo {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  translate: -50% 0;
+  transition: height 0.3s ease;
+  /*margin-top: 18px;*/
+}
+
+.main-logo img {
+  height: 50px;
+}
+
+/* 메인영역 */
+
+/* 2-1배너영역 */
+section.banner-part {
+  width: inherit;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0 auto;
+}
+
+/* 메인-배너 */
+.banner-box {
+  width: inherit;
+  box-sizing: border-box;
+  padding: 0 20px;
+  /* width: 1600px; */
+}
+
+img.bg {
+  margin: 0 auto;
+  /* width: inherit; */
+  height: inherit;
+}
+/* 2-2 서브메뉴 */
+.menu-part {
+  width: 100%;
+}
+
+/* 배너 */
+.banner-part {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-swiper-container {
+  position: relative;
+  width: 100%;
+}
+
+.bannerSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.bannerSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-box {
+  padding-top: 74px;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.banner-box .bg {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important
+;
+}
+
+/* 배너 슬라이드 버튼 커스터마이징 */
+.banner-prev,
+.banner-next {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.banner-prev:after,
+.banner-next:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner-prev:hover,
+.banner-next:hover {
+  background: none;
+  transform: scale(1.1);
+}
+
+/* 버튼 위치 조정 */
+.banner-prev {
+  left: 20px;
+}
+
+.banner-next {
+  right: 20px;
+}
+
+/* 배너 페이지네이션 커스터마이징 */
+.banner-pagination {
+  bottom: 30px !important;
+  z-index: 10;
+}
+
+.banner-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.banner-pagination .swiper-pagination-bullet-active {
+  background: rgb(0, 0, 0);
+  width: 30px;
+  border-radius: 6px;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 50%);
+  left: auto;
+  translate: -50% 0;
+}
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+
+/* 2-2 설명파트 */
+
+.rug-part {
+  text-align: center;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.color > img {
+  width: 64px;
+  height: 64px;
+}
+.sizelist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+p,
+li {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 4rem;
+  padding-bottom: 20px;
+  font-family: "MyCustomFont";
+}
+
+.entitle{
+ letter-spacing: 3px;
+}
+
+.type,
+.name,
+.material,
+.sizelist,
+.stepslist {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.leftbox > p,
+.rightbox > p {
+  padding-bottom: 50px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.note > li {
+  width: 600px;
+  list-style: decimal;
+  text-align: center;
+}
+
+/* 왼쪽 오른쪽 넘기기버튼 */
+.box {
+  display: flex;
+}
+
+.leftbox {
+  width: 50%;
+  text-align: right;
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.rightbox {
+  width: 50%;
+  text-align: left;
+  border: 1px solid black;
+  border-left: none;
+  padding: 50px;
+}
+
+.stepslistname {
+  color: #828282;
+  transition: color 0.3s ease; /* 색상 변화 애니메이션 */
+}
+
+.imgbox.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgbox.right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.item {
+  width: 138px;
+  height: 100%;
+}
+
+.arrow {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* 화살표 전환 애니메이션 */
+}
+
+/* 화살표 호버 효과 */
+/* 기본 화살표 보이기, 호버 화살표 숨기기 */
+.imgbox .arrow:nth-child(1) {
+  display: block;
+}
+
+.imgbox .arrow:nth-child(2) {
+  display: none;
+}
+
+/* leftbox 호버 시 */
+.leftbox:hover .imgbox .arrow:nth-child(1) {
+  display: none;
+}
+.leftbox:hover .stepslistname {
+  color: black;
+}
+
+.leftbox:hover .imgbox .arrow:nth-child(2) {
+  display: block;
+}
+
+/* rightbox 호버 시 */
+.rightbox:hover .imgbox .arrow:nth-child(1) {
+  display: none;
+}
+
+.rightbox:hover .imgbox .arrow:nth-child(2) {
+  display: block;
+}
+.rightbox:hover .stepslistname {
+  color: black;
+}

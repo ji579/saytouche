@@ -1,0 +1,57 @@
+{
+  "category": "home",
+  "products": [
+    {
+      "id": 1,
+      "category": "home",
+      "name": "자개 스툴 블랙",
+      "price": "320,000원",
+      "images": [
+        "home_1_01.jpg",
+        "home_1_02.jpg",
+        "home_1_03.jpg",
+        "home_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "home",
+      "name": "자개 스툴 ver.2",
+      "price": "320,000원",
+      "images": [
+        "home_2_01.jpg",
+        "home_2_02.jpg",
+        "home_2_03.jpg",
+        "home_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "home",
+      "name": "바이닐 스툴 레드",
+      "price": "150,000원",
+      "images": [
+        "home_3_01.jpg",
+        "home_3_02.jpg",
+        "home_3_03.jpg",
+        "home_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "home",
+      "name": "퀴즈 월 클락 화이트",
+      "price": "58,000원",
+      "images": [
+        "home_4_01.jpg",
+        "home_4_02.jpg",
+        "home_4_03.jpg",
+        "home_4_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+/* 외부 CSS 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+/* 12그리드 CSS */
+@import url(./grid_12_flex.css);
+
+/***************** 메인 CSS ********************/
+
+/* 상단영역 */
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 190px;
+  background: #005a2a;
+  /* background: #006633; */
+  /* background: #003f1f; */
+  transition: translate 0.3s ease; /* 부드럽게 숨김 효과 */
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  z-index: 999;
+}
+/* 스크롤시 상단 높이값 줄이기*/
+.top.scrolled {
+  height: 84px;
+  border-bottom: 0px;
+}
+
+.toppad {
+  width: 100%;
+  height: auto;
+  height: 84px;
+  /* margin-top: 8px; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.topleft,
+.topright {
+  flex: 1; /* ✅ 자동 크기 조정 */
+  min-width: 0;
+}
+
+.topright {
+  display: flex;
+
+  justify-content: flex-end;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0 10px;
+}
+a {
+    position: relative;
+  font-size: 1.9rem;
+  color: #f0ae1f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sub::before {
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    width: 5px;
+    height: 5px;
+    background :#f0ae1f;
+    left: 50%;
+    top: -5px;
+    translate: -50% 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sub:hover::before {
+    opacity: 1;
+}
+
+.kr,.en{
+  margin-left: 5px;
+}
+
+.kr a:hover,
+.en a:hover{
+color: #b67c0b;
+}
+.kr a:after,
+.ent a:after {content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* 텍스트 바로 아래 */
+  width: 0;
+  height: 2px;
+  background-color: #f0ae1f;
+  transition: width 0.3s ease;
+}
+
+.topleft a:hover::after,
+.topright a:hover::after { width: 100%; /* 선이 왼쪽→오른쪽으로 그려짐 */
+}
+
+
+
+
+
+
+
+
+/* 상단로고 */
+.main-logo {
+  position: fixed;
+  top: 54px;
+  left: 50%;
+  translate: -50% 0;
+  transition: height 0.3s ease;
+  /*margin-top: 18px;*/
+}
+.top.scrolled .main-logo {
+  top: 18px;
+}
+.main-logo img {
+  height: 115px;
+}
+
+.top.scrolled .site-header-logo img {
+  height: 50px;
+  transition: 0.3s ease;
+}
+
+
+/* 메인영역 */
+
+/* 2-1배너영역 */
+section.banner-part {
+  width: 100%;
+  max-width: 1600px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 190px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.banner-box {
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  flex: 0 0 80%;
+}
+
+img.bg {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-explain {
+  width: 100%;
+  height: 20%;
+  flex: 0 0 20%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  word-break: break-all;
+  place-content: center;
+  justify-self: center;
+  text-align: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.banner-explain > h3 {
+  font-size: 2rem;
+}
+.strong {
+  font-size: 2.2rem;
+}
+.banner-explain > h4 {
+  font-size: 1.6rem;
+}
+
+/* 2-2 메뉴 영역 */
+
+/* 각 섹션에 스냅 위치 지정 */
+section .menu-part {
+  scroll-snap-align: start; /* 화면 상단에 맞춰 스냅 */
+}
+.menu-part {
+  flex: 1 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 84px;
+  /* height: 100vh; */
+}
+.main-menu-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.menu-box {
+  width: 100%;
+  height: calc(95vh - 84px); /* 기존처럼 헤더 높이 제외 가능 */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+.bgmenu {
+  position: relative;
+  flex: 1; /* 3등분 (같은 비율) */
+  aspect-ratio: 4 / 5; /* flex 내부 콘텐츠가 넘쳐서 밀리지 않게 */
+  box-sizing: border-box;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+.bgmenu:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/Union.png) no-repeat center / cover;
+  z-index: 99;
+}
+
+.bgmenu li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.bgmenu .default img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bgmenu .default {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.bgmenu::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left: 0 */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #00000000 70%,
+    #0000004b 85%,
+    #000000a5 100%
+  );
+  pointer-events: none; /* 마우스 이벤트 방해하지 않게 */
+  z-index: 9;
+}
+.menutxt-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  z-index: 99;
+  color: white;
+}
+.store-explain {
+  padding-top: 78px;
+}
+
+/* 호버시 뒷배경 생성 */
+.change-hover1,
+.change-hover2,
+.change-hover3 {
+  position: absolute;
+  z-index: 9;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  opacity: 0;
+  background: #00000050;
+  transition: 0.3s ease;
+  pointer-events: none; /* ✅ 기본적으로 클릭 이벤트 통과 */
+}
+
+/* .change-hover1 {
+   background: #67A76260;}
+.change-hover2 {
+  background: #6b3b2a60;
+}
+.change-hover3 {
+    background: #f0E7DA60;
+} */
+.menutxt-top {
+  position: absolute;
+  font-size: 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 15px;
+  /* padding: 10px 0; */
+  z-index: 99;
+  color: white;
+}
+.store-explain h4,
+h5 {
+  width: 100%;
+  margin: 15px 0;
+  /* padding: 10px 0; */
+  z-index: 99;
+  color: white;
+}
+
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2rem;
+}
+
+.bgmenu:hover .change-hover1 {
+  opacity: 1;
+  transition: 0.3s ease;
+  pointer-events: auto; /* ✅ 호버 시 클릭 가능 */
+}
+.bgmenu:hover .change-hover2 {
+  opacity: 1;
+  transition: 0.3s ease;
+  pointer-events: auto; /* ✅ 호버 시 클릭 가능 */
+}
+.bgmenu:hover .change-hover3 {
+  opacity: 1;
+  transition: 0.3s ease;
+  pointer-events: auto; /* ✅ 호버 시 클릭 가능 */
+}
+
+/* Swiper 네비게이션 스타일 */
+.menu-swiper-next,
+.menu-swiper-prev {
+  display: none; /* 데스크톱에서는 숨김 */
+  color: #f0ae1f;
+}
+
+.menu-swiper-pagination {
+  display: none; /* 데스크톱에서는 숨김 */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 40px;
+}
+.swiper-button-next:after{
+  margin-right: 10px;
+}.swiper-button-prev:after{
+  margin-left: 10px;
+}
+.swiper-pagination-bullet {
+  background: #f0ae1f;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f0ae1f;
+  opacity: 1;
+}

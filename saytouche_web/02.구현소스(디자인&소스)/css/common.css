@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* 공통모듈 CSS - common.css */
+
+/* 웹폰트 CDN으로 불러오기
+CDN(Content Delivery Network)은 
+어떤 웹파일을 네트워크로 불러오는 것임! */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* 웹폰트 적용 코드 */
+/*   font-family: "Bagel Fat One", system-ui;
+ font-family: "Diphylleia", serif;
+  font-family: "Gowun Batang", serif; */
+@font-face {
+  /* 폰트 이름 정의: CSS에서 이 이름으로 폰트를 참조합니다. */
+  font-family: "MyCustomFont";
+
+  /* 폰트 파일의 경로와 형식 지정 */
+  src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+  /* (선택 사항) 폰트의 굵기 지정 */
+  font-weight: normal;
+
+  /* (선택 사항) 폰트의 스타일 지정 (예: italic) */
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+/* 공통셋팅 */
+html {
+  /* 부드러운 스크롤 셋팅 */
+  scroll-behavior: smooth;
+
+  /* 전체 글자크기 */
+  font-size: 10px;
+  /* rem단위 계산편의를 위함 */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 전체 글씨체 적용하기 */
+body {
+  /* 웹폰트체를 전체에 적용함! */
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 10px;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+.inbox {
+  /* width: 100%;
+    box-sizing: border-box;
+    padding: 0 calc(100% / 12) 0; */
+  /* max-width: 1600px;
+    margin: 0 auto; */
+  padding: 0 40px;
+}
+
+/* 하단영역 */
+#bottom-area {
+  width: 100%;
+  background: #005a2a;
+  padding: 60px 0;
+}
+/* .bottom-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+} */
+.bottom-info li {
+  color: #b3b3b3;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bottom-info-first > li,
+.customer > .bottomtit,
+.store > .bottomtit {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.bottom-info-first {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  font-size: 1.6rem;
+}
+
+/* 첫번째 줄 */
+.bottomlogo img {
+  height: 50px;
+}
+
+/* 두번째 줄 */
+.bottom-info-second {
+  display: flex;
+  gap: 50px;
+  margin-left: calc(191.56px + 30px);
+  margin-bottom: 40px;
+}
+
+/* 3번째 줄 */
+.bottom-info-third {
+  text-align: right;
+  color: #b3b3b3;
+  font-size: 1.4rem;
+}
+.store,
+.customer {
+  width: 385px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.before {
+  position: relative;
+}
+.before::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+ right: -15px;
+  width: 1px;
+  height: 30px;
+  background-color: #b3b3b3;
+  z-index: 1;
+}
+.footerbtn {
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  color: #b3b3b3;
+  border: #b3b3b3 1px solid;
+  font-size: 1.5rem;
+  margin: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.footerbtn:hover {
+  color: #ffffff;
+  background: #000000;
+}
+.txt {
+  font-size: 1.4rem;
+  color: #b3b3b3;
+  min-height: 100px;
+  margin: 0;
+}
+
+.sns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sns i{ cursor: pointer; }
+.sns img {
+  height: 20px;
+}
+
+ul.media-menu {
+  font-size: 18px;
+  color: #f0ae1f;
+ display: none;
+}
+
+/* ======================================= */
+/* 사이드바 메뉴 */
+/* ======================================= */
+
+/* 오버레이 */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 사이드바 */
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 363px;
+  max-width: 90%;
+  height: 100%;
+  background: white;
+  z-index: 999;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar-menu.active {
+  left: 0;
+}
+
+/* 사이드바 헤더 */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.sidebar-icons i {
+  cursor: pointer;
+}
+
+/* 사이드바 컨텐츠 */
+.sidebar-content {
+  padding: 30px;
+}
+
+/* 사이드바 네비게이션 */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.sidebar-nav li {
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-nav li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-nav li a:hover {
+  color: #005a2a;
+}
+
+.sidebar-nav li.has-submenu a i {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 사이드바 검색 */
+.sidebar-search {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.sidebar-search input {
+  width: 100%;
+  padding: 12px 40px 12px 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  outline: none;
+}
+
+.sidebar-search input::placeholder {
+  color: #999;
+}
+
+.sidebar-search button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+/* 사이드바 소셜 */
+.sidebar-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 80px;
+}
+
+.sidebar-social a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-social a:hover {
+  color: #005a2a;
+}
+
+/* 사이드바 로고 */
+.sidebar-logo {
+  text-align: center;
+}
+
+.sidebar-logo img {
+  max-width: 200px;
+  height: auto;
+}
+

@@ -1,0 +1,57 @@
+{
+  "category": "lifestyle",
+  "products": [
+    {
+      "id": 1,
+      "category": "lifestyle",
+      "name": "두들 페르시안 블랭킷 아이보리",
+      "price": "62,000원",
+      "images": [
+        "lifestyle_1_01.jpg",
+        "lifestyle_1_02.jpg",
+        "lifestyle_1_03.jpg",
+        "lifestyle_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "lifestyle",
+      "name": "두들 페르시안 머그 블루",
+      "price": "22,000원",
+      "images": [
+        "lifestyle_2_01.jpg",
+        "lifestyle_2_02.jpg",
+        "lifestyle_2_03.jpg",
+        "lifestyle_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "lifestyle",
+      "name": "큐브 멀티 플러그 01",
+      "price": "48,000원",
+      "images": [
+        "lifestyle_3_01.jpg",
+        "lifestyle_3_02.jpg",
+        "lifestyle_3_03.jpg",
+        "lifestyle_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "lifestyle",
+      "name": "벨벳 룸슈즈 블랙",
+      "price": "39,000원",
+      "images": [
+        "lifestyle_4_01.jpg",
+        "lifestyle_4_02.jpg",
+        "lifestyle_4_03.jpg",
+        "lifestyle_4_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

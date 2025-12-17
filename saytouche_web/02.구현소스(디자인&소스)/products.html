@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saytouche - Products</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <!-- 폰트어썸 CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+    <!-- 메인 CSS -->
+    <link rel="stylesheet" href="./css/products.css" />
+
+    <!-- 미디어쿼리 -->
+    <link rel="stylesheet" href="./css/media_main.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+    <!-- 외부JS -->
+    <script src="./js/main1_jquery.js" defer></script>
+
+    <!-- 공통 JS -->
+    <script type="module" src="./js/common.js"></script>
+
+    <!-- 제품 페이지 JS -->
+    <script src="./js/products.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <div id="top-area"></div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main id="main-area">
+      <div class="main-area">
+        <h2 class="temp-tit blind">메인영역</h2>
+        
+        <div class="banner-explain">
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>New Arrival : Doodle Persian Blanket 20% Off</span>
+        <span>카카오톡 신규 가입 시 10,000원 쿠폰 (수신 동의 필수)</span>
+        <span>New Arrival : Doodle Persian Blanket 20% Off</span>
+        <span>카카오톡 신규 가입 시 10,000원 쿠폰 (수신 동의 필수)</span>
+        <span>New Arrival : Doodle Persian Blanket 20% Off</span>
+        <span>카카오톡 신규 가입 시 10,000원 쿠폰 (수신 동의 필수)</span>
+        <span>New Arrival : Doodle Persian Blanket 20% Off</span>
+        <span>카카오톡 신규 가입 시 10,000원 쿠폰 (수신 동의 필수)</span>
+      </div>
+    </div>
+  </div>
+
+        <!-- 2-1 배너 파트 -->
+        <section class="banner-part">
+          <h2 class="temp-tit blind">2-1. 배너영역</h2>
+          <div class="banner-box">
+            <img src="./images/rugbanner.jpg" alt="세이투세 러그배너" class="bg" />
+          </div>
+        </section>
+        <!-- 배너파트 끝 -->
+
+        <!-- 2-2 상품 설명 파트 -->
+        <section class="item-part">
+          <h2 class="temp-tit blind">2-2. 아이템영역</h2>
+          <nav class="shop-menu">
+            <ul>
+              <li><a href="category.html?page=shop">Shop</a></li>
+              <li><a href="#" id="category-title-nav">전체상품</a></li>
+            </ul>
+          </nav>
+          <div class="hd_inner">
+            <div class="list_hd_box">
+              <ul class="xans-element- xans-product xans-product-orderby sort_list">
+                <li class="sort_items xans-record-">
+                  <a href="#" class="sort_link" data-sort="new">신상품</a>
+                </li>
+                <li class="sort_items xans-record-">
+                  <a href="#" class="sort_link" data-sort="low">낮은가격</a>
+                </li>
+                <li class="sort_items xans-record-">
+                  <a href="#" class="sort_link" data-sort="high">높은가격</a>
+                </li>
+                <li class="sort_items xans-record-">
+                  <a href="#" class="sort_link" data-sort="popular">인기상품</a>
+                </li>
+              </ul>
+              <!-- 상품수 -->
+              <div class="list_count_box">
+                <p class="list_count" id="product-count">0 item</p>
+              </div>
+              <!-- 상품수 끝 -->
+            </div>
+          </div>
+        </section>
+
+       <!-- 2-3 제품 그리드 -->
+        <div class="products-grid" id="productsGrid">
+          <!-- JavaScript로 동적 생성됩니다 -->
+          <div class="loading">상품을 불러오는 중...</div>
+        </div>
+
+        <!-- ✅ 페이징 영역 - 폰트어썸 아이콘 사용 -->
+        <div class="pagination-wrapper" id="paginationWrapper" style="display: none;">
+          <div class="pagination" id="pagination">
+            <button class="page-btn first-page" id="firstPage">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <button class="page-btn prev-page" id="prevPage">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <div class="page-numbers" id="pageNumbers">
+              <!-- JavaScript로 동적 생성 -->
+            </div>
+            <button class="page-btn next-page" id="nextPage">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <button class="page-btn last-page" id="lastPage">
+              <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 메인영역 끝 -->
+    </main>
+
+    <!-- 하단영역 -->
+    <div id="bottom-area"></div>
+  </body>
+</html>

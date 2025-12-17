@@ -1,0 +1,57 @@
+{
+  "category": "lighting",
+  "products": [
+    {
+      "id": 1,
+      "category": "lighting",
+      "name": "위스키 램프 그린",
+      "price": "89,000원",
+      "images": [
+        "lighting_1_01.jpg",
+        "lighting_1_02.jpg",
+        "lighting_1_03.jpg",
+        "lighting_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "lighting",
+      "name": "위스키 램프 옐로우",
+      "price": "89,000원",
+      "images": [
+        "lighting_2_01.jpg",
+        "lighting_2_02.jpg",
+        "lighting_2_03.jpg",
+        "lighting_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "lighting",
+      "name": "믹스 플로어 램프 그린",
+      "price": "390,000원",
+      "images": [
+        "lighting_3_01.jpg",
+        "lighting_3_02.jpg",
+        "lighting_3_03.jpg",
+        "lighting_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "lighting",
+      "name": "믹스 플로어 램프 크림",
+      "price": "390,000원",
+      "images": [
+        "lighting_4_01.jpg",
+        "lighting_4_02.jpg",
+        "lighting_4_03.jpg",
+        "lighting_4_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

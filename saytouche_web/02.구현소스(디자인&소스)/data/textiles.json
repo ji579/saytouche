@@ -1,0 +1,122 @@
+{
+  "category": "textiles",
+  "products": [
+    {
+      "id": 1,
+      "category": "textiles",
+      "name": "리퀴파이드 페르시안 러그 아이보리",
+      "price": "170,000원",
+      "images": [
+        "textiles_1_01.jpg",
+        "textiles_1_02.jpg",
+        "textiles_1_03.jpg",
+        "textiles_1_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 2,
+      "category": "textiles",
+      "name": "럭키 페르시안 오너먼트 러그 그린",
+      "price": "55,000원",
+      "images": [
+        "textiles_2_01.jpg",
+        "textiles_2_02.jpg",
+        "textiles_2_03.jpg",
+        "textiles_2_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 3,
+      "category": "textiles",
+      "name": "[SAY TOUCHÉ X GLASSHAUS] 서핑보드 러그",
+      "price": "89,000원",
+      "images": [
+        "textiles_3_01.jpg",
+        "textiles_3_02.jpg",
+        "textiles_3_03.jpg",
+        "textiles_3_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 4,
+      "category": "textiles",
+      "name": "두들 페르시안 원형 러그 멀티",
+      "price": "150,000원",
+      "images": [
+        "textiles_4_01.jpg",
+        "textiles_4_02.jpg",
+        "textiles_4_03.jpg",
+        "textiles_4_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 5,
+      "category": "textiles",
+      "name": "리퀴파이드 페르시안 러그 블랙",
+      "price": "170,000원",
+      "images": [
+        "textiles_5_01.jpg",
+        "textiles_5_02.jpg",
+        "textiles_5_03.jpg",
+        "textiles_5_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 6,
+      "category": "textiles",
+      "name": "두들 페르시안 사각 러그 스카이 블루",
+      "price": "63,000원",
+      "images": [
+        "textiles_6_01.jpg",
+        "textiles_6_02.jpg",
+        "textiles_6_03.jpg",
+        "textiles_6_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 7,
+      "category": "textiles",
+      "name": "모스 러그 그린",
+      "price": "230,000원",
+      "images": [
+        "textiles_7_01.jpg",
+        "textiles_7_02.jpg",
+        "textiles_7_03.jpg",
+        "textiles_7_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 8,
+      "category": "textiles",
+      "name": "포토 우븐 블랭킷 01",
+      "price": "280,000원",
+      "images": [
+        "textiles_8_01.jpg",
+        "textiles_8_02.jpg",
+        "textiles_8_03.jpg",
+        "textiles_8_04.jpg"
+      ],
+      "status": "sold out"
+    },
+    {
+      "id": 9,
+      "category": "textiles",
+      "name": "웰컴 매트",
+      "price": "58,000원",
+      "images": [
+        "textiles_9_01.jpg",
+        "textiles_9_02.jpg",
+        "textiles_9_03.jpg",
+        "textiles_9_04.jpg"
+      ],
+      "status": "sold out"
+    }
+  ]
+}

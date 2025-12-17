@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saytouche</title>
+    <!-- 파비콘 넣기 -->
+    <!-- <link rel="shortcut icon" href="./images/favicon.ico" /> -->
+    <!-- 폰트어썸 CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 메인 CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    
+    <link rel="stylesheet" href="./css/media_main.css" />
+
+   <!-- 제이쿼리 라이브러리 불러오기 
+     제이쿼리를 사용하는 JS파일 위에 불러와야한다! -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 외부JS 제이쿼리버전 - defer필수! -->
+    <script src="./js/main1_jquery.js" defer></script>
+
+    <!-- <script type="module" src="./js/common.js"></script> -->
+       <!-- 공통 JS :import 문법을 사용하려면
+     반드시 type="module"로 써야한다.-->
+    <script type="module" src="./js/common.js"></script>
+    <!-- 메인 JS -->
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <div id="top-area"> </div>
+    </header>
+    <!-- //////////////////////////////////////////////// -->
+     
+    <!--2. 메인영역 -->
+    <main id="main-area">
+      <div class="main-area">
+        <h2 class="temp-tit blind">메인영역</h2>
+
+        <!-- 2-1 배너 파트 -->
+        <section class="banner-part">
+          <h2 class="temp-tit blind">2-1. 배너영역</h2>
+          <!-- 배너박스 -->
+          <div class="banner-box">
+            <img src="./images/company_web.jpg" alt="세이투세" class="bg" />
+          </div>
+          <!-- 배너박스 설명 -->
+          <div class="banner-explain">
+            <h3>
+              펜싱에서 상대 선수에게 득점을 내주었을 때 외치던 단어
+              <strong>‘TOUCHÉ’</strong>. <br />
+              이는 자신이 찔렸다는 것을 인정한다는 의미이며, 근래에는 상대방의
+              말에 동의하는 하나의 표현으로 자리매김하였다.
+            </h3>
+            <h4>
+              세이투셰는 ‘제품과 작품 경계에 있는 디자인’ 이라는 모토로 일상
+              속에서 접할 수 있는 다양한 아이템들을 그들만의 시각으로
+              재해석한다.
+            </h4>
+          </div>
+        </section>
+        <!-- 2-1 배너 파트 끝-->
+      </div>
+
+      <!-- 2-2 메뉴 파트 -->
+      <section class="menu-part">
+        <h2 class="temp-tit blind">2-2 메뉴영역</h2>
+        <div class="main-menu-box">
+          <div class="menu-box swiper">
+            <div class="swiper-wrapper">
+              <!-- 메뉴1 -->
+              <ul class="bgmenu swiper-slide">
+                <!-- 전 -->
+                <li class="default">
+                  <a href="#archive" class="sub">
+                    <img src="./images/archive2.jpg" alt="메뉴1" class="menu1" />
+                    <h3 class="menutxt-bottom">SAY TOUCHÉ X WOO(우원재)</h3>
+                  </a>
+                </li>
+                <li class="change-hover1">
+                  <a href="#"> <h3 class="menutxt-top">ARCHIVE</h3> </a>
+                </li>
+              </ul>
+              <!-- 메뉴2 -->
+              <ul class="bgmenu swiper-slide">
+                <!-- 전 -->
+                <li class="default">
+                  <a href="#shop" class="sub">
+                    <img src="./images/shop3.jpg" alt="메뉴2" class="menu2" />
+                    <h3 class="menutxt-bottom">송치 월 클락</h3>
+                  </a>
+                </li>
+                <li class="change-hover2">
+                  <a href="#"> <h3 class="menutxt-top">SHOP</h3> </a>
+                </li>
+              </ul>
+              <!-- 메뉴3 -->
+              <ul class="bgmenu swiper-slide">
+                <!-- 전 -->
+                <li class="default">
+                  <a href="#store" class="sub">
+                    <img src="./images/store2.jpg" alt="메뉴3" class="menu3" />
+                    <h3 class="menutxt-bottom">SAY TOUCHÉ</h3>
+                  </a>
+                </li>
+                <li class="change-hover3">
+                  <a href="#">
+                    <h3 class="menutxt-top">STORE</h3>
+                    <div class="store-explain">
+                      <h4>LOCATION</h4>
+                      <h5>
+                        53, NOKSAPYEONG-DAERO 32-GIL, YONGSAN-GU, SEOUL<br />
+                        서울시 용산구 녹사평대로32길 53
+                      </h5>
+
+                      <h4>HOURS</h4>
+                      <h5>
+                        Tuesday to Sunday - 12pm to 7pm<br />
+                        Monday - Closed
+                      </h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 네비게이션 버튼 (모바일에서만 보임) -->
+            <div class="swiper-button-next menu-swiper-next"></div>
+            <div class="swiper-button-prev menu-swiper-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2-2 메뉴파트 끝-->
+    </main>
+    <!-- //////////////////////////////////////////////// -->
+    <!-- 6. 하단영역 -->
+     <div id="bottom-area"></div>
+  </body>
+</html>

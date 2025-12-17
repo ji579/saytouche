@@ -1,0 +1,16 @@
+async function getAllProducts() {
+  const categories = ['edition', 'textiles', 'home', 'mirror', 'lighting', 'lifestyle', 'goods'];
+  
+  // 모든 파일을 동시에 불러오기
+  const promises = categories.map(cat => 
+    fetch(`products/${cat}.json`).then(res => res.json())
+  );
+  
+  const results = await Promise.all(promises);
+  
+  // 모든 products 배열 합치기
+  const allProducts = results.flatMap(data => data.products);
+  
+  // 랜덤 섞기
+  return allProducts.sort(() => Math.random() - 0.5);
+}

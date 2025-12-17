@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAYTOUCHE - Split Screen</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* 스플릿 컨테이너 */
+      .split-container {
+        display: flex;
+        /* height: 100vh; */
+        height: calc(100vh - 84px);
+        margin-top: 60px;
+      }
+
+      .split-panel {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: flex 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+      }
+
+      .split-panel:hover {
+        flex: 2;
+      }
+
+      .split-panel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+      }
+
+      .split-panel:hover img {
+        transform: scale(1.1);
+      }
+
+      /* 오버레이 */
+      .panel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+      }
+
+      .panel-overlay:hover h3{
+        font-size: 100px;
+       
+      }
+
+      .split-panel:hover .panel-overlay {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .panel-content {
+        text-align: center;
+        color: white;
+        transform: translateY(0);
+        transition: transform 0.5s ease;
+      }
+
+      .split-panel:hover .panel-content {
+        transform: translateY(-20px);
+      }
+
+      .panel-content h3 {
+        font-size: 60px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+         transition: font-size 0.5s ease-in-out;
+      }
+
+      .panel-content p {
+        font-size: 16px;
+        letter-spacing: 3px;
+        opacity: 0;
+        transition: opacity 0.5s ease 0.2s;
+      }
+
+      .split-panel:hover .panel-content p {
+        opacity: 1;
+      }
+
+      .panel-number {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 100px;
+        font-weight: 900;
+        color: white;
+        opacity: 0.3;
+        line-height: 1;
+      }
+
+      /* 반응형 */
+      @media (max-width: 768px) {
+        .split-container {
+          flex-direction: column;
+        }
+
+        .split-panel {
+          height: 33.33vh;
+        }
+
+        .panel-content h3 {
+          font-size: 30px;
+        }
+
+        .panel-number {
+          font-size: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">SAYTOUCHE</div>
+      <div>EST. 2024</div>
+    </header>
+
+    <div class="split-container">
+      <!-- Panel 1: Archive -->
+      <div class="split-panel">
+        <img src="./images/archive2.jpg" alt="Archive" />
+        <div class="panel-overlay">
+          <div class="panel-number">01</div>
+          <div class="panel-content">
+            <h3>PROJECT</h3>
+            <p>Read More</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: press -->
+      <div class="split-panel">
+        <img src="./images/press01.jpg" alt="press" />
+        <div class="panel-overlay">
+          <div class="panel-number">02</div>
+          <div class="panel-content">
+            <h3>PRESS</h3>
+            <p>Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
