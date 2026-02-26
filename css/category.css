@@ -555,7 +555,6 @@ ul.md {
   /* 모바일에서 배너 이미지 전체 보이기 */
   .banner-box-shop picture img,
   .banner-box-shop .bg {
-    object-fit: contain;
     background-color: #f8f8f8;
   }
 

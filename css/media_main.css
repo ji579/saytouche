@@ -58,7 +58,7 @@
   }
 
   .swiper .bgmenu.swiper-slide {
-    width: auto;
+    width: 100vw;/* ← 이 부분을 100vw 또는 50vw로 변경 */
     flex: none;
     aspect-ratio: unset;
     height: 100%;
@@ -68,7 +68,7 @@
   .menu-swiper-next,
   .menu-swiper-prev {
     display: block;
-    color: #f0ae1f;
+    color: #ffff;
   }
 
   .menu-swiper-pagination {
@@ -136,7 +136,7 @@
   }
 
   .swiper .bgmenu.swiper-slide {
-    width: auto;
+    width: 100vw;
     flex: none;
     aspect-ratio: unset;
     height: 100%;
