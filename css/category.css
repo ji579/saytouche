@@ -173,7 +173,6 @@ a {
 section.banner-part-shop {
   width: inherit;
   width: 100%;
-  height: calc(100vh - 84px - 30px);
   margin: 0 auto;
 }
 

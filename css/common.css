@@ -209,6 +209,7 @@ ul.media-menu {
 }
 
 .sidebar-menu.active {
+  overflow: hidden;
   left: 0;
 }
 

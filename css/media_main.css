@@ -152,7 +152,7 @@
   .banner-box {
     flex: 0 0 45%;
   }
-  section.banner-part {    gap: 85px;padding-top: 230px;}
+  section.banner-part {    gap: 85px;}
 .banner-explain {height: 30%;}
 .banner-explain > h4 {
     padding-top: 30px;}
